@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  color-scheme: dark;
+
+  --color-bg: #090b10;
+  --color-surface: #11151e;
+  --color-surface-raised: #191f2b;
+
+  --color-text: #f4f7ff;
+  --color-text-muted: #a0a9ba;
+
+  --color-accent: #63e6ff;
+  --color-accent-secondary: #a78bfa;
+  --color-border: rgb(255 255 255 / 10%);
+
+  --font-body: Inter, system-ui, sans-serif;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  --content-max-width: 1200px;
+}
+
+html {
+  min-height: 100%;
+  background: var(--color-bg);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
