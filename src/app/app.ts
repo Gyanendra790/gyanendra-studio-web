@@ -8,5 +8,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('gyanendra-studio-web');
+  readonly name = 'GYANENDRA.STUDIO';
+  readonly tagline = 'Ideas, architected into software.';
+  readonly role = 'Full-Stack Software Engineer';
 }
