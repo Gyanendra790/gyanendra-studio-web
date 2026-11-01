@@ -78,6 +78,23 @@
     </div>
   </section>
 
+  <section class="work-section" id="work">
+  <div class="section-heading">
+    <p class="eyebrow">Selected work</p>
+    <h2>Projects built to solve real product problems.</h2>
+  </div>
+
+  <div class="projects-grid">
+    <article class="project-card" *ngFor="let project of projects">
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.summary }}</p>
+      <div class="stack">
+        <span *ngFor="let item of project.stack">{{ item }}</span>
+      </div>
+    </article>
+  </div>
+</section>
+
   <footer class="site-footer" id="about">
     <span>INDEPENDENT THINKING. INTENTIONAL ENGINEERING.</span>
     <a href="#work">Discover what's possible ↓</a>
